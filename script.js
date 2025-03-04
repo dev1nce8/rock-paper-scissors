@@ -91,3 +91,5 @@ function playGame() {
     console.log("You WON");
   }
 }
+
+playGame();
