@@ -39,7 +39,7 @@ function playGame() {
     displayBanner(winner);
     if (winner === "human") {
       humanScore += 1;
-    } else {
+    } else if winner === "computer" {
       computerScore += 1;
     }
     displayUpdatedScore(humanScore, computerScore);
