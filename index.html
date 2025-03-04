@@ -1,11 +1,43 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rock Paper Scissors</title>
-  </head>
-  <body>
-    <script src="./script.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rock Paper Scissors</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <div id="window" class="container window">
+    <div id="scoreboard" class="container scoreboard">
+      <p>You: <span id="human-score" class="score">0</span></p>
+      <p>Computer: <span id="computer-score" class="score">0</span></p>
+    </div>
+    <div id="gameboard" class="gameboard">
+      <div id="end-screen" class="hidden">
+        <p id="winner"></p>
+        <button id="restart-button">Play Again!</button>
+      </div>
+      <div id="hand-display" class="container hand-display">
+        <div class="hand">
+          <span id="human-banner" class="hidden banner">Winner</span>
+          <div id="human-hand" class="hand"></div>
+        </div>
+        <span class="divider">VS</span>
+        <div class="hand">
+          <span id="computer-banner" class="hidden banner">Winner</span>
+          <div id="computer-hand" class="hand"></div>
+        </div>
+      </div>
+      <div id="hand-buttons">
+        <button id="rock-button" data-name="rock">Rock</button>
+        <button id="paper-button" data-name="paper">Paper</button>
+        <button id="scissors-button" data-name="scissors">Scissors</button>
+      </div>
+    </div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+
 </html>

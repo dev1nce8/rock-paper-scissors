@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  background-color: #000b58;
+  color: #fff2f2;
+}
+
+button {
+  padding: 1em 2em;
+  background-color: #ff7f3e;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bolder;
+  letter-spacing: 1px;
+}
+
+.container {
+  border: 2px solid #fff2f2;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.window {
+  width: 600px;
+  height: 600px;
+  margin: 2rem auto;
+  background-color: #003161;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.scoreboard {
+  display: flex;
+  justify-content: space-around;
+  background-color: #f5e8c7;
+  color: #003161;
+}
+
+.score {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.gameboard {
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.hand-display {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* Hand icons */
+.hand-display img {
+  width: 140px;
+  height: 140px;
+}
+
+.hand {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.divider {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.banner {
+  font-size: 1.5rem;
+  color: #ff7f3e;
+  font-weight: bolder;
+  letter-spacing: 1px;
+}
+
+.hidden {
+  display: none;
+}
